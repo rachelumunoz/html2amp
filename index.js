@@ -9,6 +9,8 @@ const ga = require('./lib/googleanalytics')
 const iframe = require('./lib/iframe')
 const boilerplate = require('./lib/boilerplate')
 const serviceworker = require('./lib/serviceWorker')
+const ampLink = require('./lib/ampLink')
+
 
 const html2amp = async (html, options = {}) => {
   let $ = cheerio.load(html)
@@ -22,6 +24,8 @@ const html2amp = async (html, options = {}) => {
   $ = iframe($, options)
   $ = serviceworker($, options)
   $ = boilerplate($, options)
+  $ = ampLink($, options)
+
   return $.html()
 }
 
