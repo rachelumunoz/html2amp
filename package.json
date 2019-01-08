@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tomoyukikashiro/html2amp.git"
+    "url": "git+https://github.com/rachelumunoz/html2amp.git"
   },
   "keywords": [
     "html",
@@ -21,9 +21,9 @@
   "author": "Tomoyuki Kashiro",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tomoyukikashiro/html2amp/issues"
+    "url": "https://github.com/rachelumunoz/html2amp/issues"
   },
-  "homepage": "https://github.com/tomoyukikashiro/html2amp#readme",
+  "homepage": "https://github.com/rachelumunoz/html2amp#readme",
   "dependencies": {
     "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.2",
