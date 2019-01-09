@@ -12,7 +12,6 @@ const boilerplate = require('./lib/boilerplate')
 const serviceworker = require('./lib/serviceWorker')
 const ampLink = require('./lib/ampLink')
 
-
 const html2amp = async (html, options = {}) => {
   let $ = cheerio.load(html)
   $ = amp($, options)
