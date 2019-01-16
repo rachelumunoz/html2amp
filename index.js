@@ -6,11 +6,11 @@ const script = require('./lib/script')
 const charset = require('./lib/meta/charset')
 const viewport = require('./lib/meta/viewport')
 const ga = require('./lib/googleanalytics')
+const gtm = require('./lib/googleTagManager')
 const iframe = require('./lib/iframe')
 const boilerplate = require('./lib/boilerplate')
 const serviceworker = require('./lib/serviceWorker')
 const ampLink = require('./lib/ampLink')
-
 
 const html2amp = async (html, options = {}) => {
   let $ = cheerio.load(html)
@@ -21,6 +21,7 @@ const html2amp = async (html, options = {}) => {
   $ = charset($, options)
   $ = viewport($, options)
   $ = ga($, options)
+  $ = gtm($, options)
   $ = iframe($, options)
   $ = serviceworker($, options)
   $ = boilerplate($, options)
